@@ -3,7 +3,6 @@ import { ToggleContext, ButtonContext } from '../ToggleStateContext';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
-	faLinkedin,
 	faGithubSquare,
 	faCodepen,
 } from '@fortawesome/free-brands-svg-icons';
@@ -12,7 +11,7 @@ import { Link } from 'react-router-dom';
 import { FormattedMessage } from 'react-intl';
 import NavFooter from '../NavFooter';
 
-library.add(faLinkedin, faGithubSquare, faCodepen);
+library.add(faGithubSquare, faCodepen);
 
 const SideDrawer = () => {
 	const [navOpen, setNavOpen] = useContext(ToggleContext);
@@ -52,17 +51,14 @@ const SideDrawer = () => {
 						</div>
 						<div className="logo_links">
 							<a
-								href="https://github.com/cateatsbananas"
+								href="https://github.com/catwithsocks"
 								target="_blank"
 								rel="noopener noreferrer"
 							>
 								<FontAwesomeIcon icon={faGithubSquare} />
 							</a>
-							<a href="/" target="_blank" rel="noopener noreferrer">
+							<a href="https://codesandbox.io/u/catwithsocks" target="_blank" rel="noopener noreferrer">
 								<FontAwesomeIcon icon={faCodepen} />
-							</a>
-							<a href="/" target="_blank" rel="noopener noreferrer">
-								<FontAwesomeIcon icon={faLinkedin} />
 							</a>
 						</div>
 					</div>

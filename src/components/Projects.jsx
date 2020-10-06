@@ -50,10 +50,21 @@ const SimpleCollapse = () => {
 		<ProjComp
 			src={my_homepage_preview}
 			src2={my_homepage}
-			projName="Project 2"
-			projText="Placeholder as example"
+			projName={
+				<FormattedMessage
+					id="projects.projects.startpage"
+					defaultMessage="Personal Startpage"
+				/>
+			}
+			projText={
+				<FormattedMessage
+					id="projects.projects.startpage.desc"
+					defaultMessage="Personal Startpage"
+				/>
+			}
 			linkToProj="/"
-			chipLink="/"
+			chipLink="https://codesandbox.io/s/eager-wildflower-8d2sj"
+			projType={['HTML5', 'CSS', 'JAVASCRIPT']}
 		/>,
 		<ProjComp
 			src={my_homepage_preview}

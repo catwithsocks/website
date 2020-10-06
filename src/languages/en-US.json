@@ -8,6 +8,8 @@
 	"projects.projects.homepage": "My Homepage",
 	"projects.projects.homepage.desc": "Personal Homepage and Portfolio",
 	"projects.projects.project.desc": "My personal website, which contains infos about my projects and me. It was created in React using SCSS for the Design. The goal was to make it clean, modern-looking and easy to handle.",
+	"projects.projects.startpage": "Personalized Startpage",
+	"projects.projects.startpage.desc": "Personalized Startpage with customizable elements and timer",
 	"projects.showMore": "Show More",
 	"projects.showMore.open": "Show Less",
 	"projects.projects.project.link": "Project",

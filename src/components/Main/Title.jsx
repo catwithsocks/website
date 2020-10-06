@@ -46,13 +46,13 @@ const Home = () => {
 								</h1>
 								<div className="icons">
 									<a
-										href="https://github.com/cateatsbananas"
+										href="https://github.com/catwithsocks"
 										target="_blank"
 										rel="noopener noreferrer"
 									>
 										<FontAwesomeIcon icon={faGithubSquare} />
 									</a>
-									<a href="/" target="_blank" rel="noopener noreferrer">
+									<a href="https://codesandbox.io/u/catwithsocks" target="_blank" rel="noopener noreferrer">
 										<FontAwesomeIcon icon={faCodepen} />
 									</a>
 								</div>

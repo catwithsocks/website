@@ -30,7 +30,7 @@ const FloatingNav = () => {
 				</ul>
 				<ul className="floating-links">
 					<a
-						href="https://github.com/cateatsbananas"
+						href="https://github.com/catwithsocks"
 						rel="noopener noreferrer"
 						target="_blank"
 					>
@@ -38,7 +38,7 @@ const FloatingNav = () => {
 							<FontAwesomeIcon icon={faGithubSquare} />
 						</li>
 					</a>
-					<a href="/about" rel="noopener noreferrer">
+					<a href="https://codesandbox.io/u/catwithsocks" rel="noopener noreferrer" target="_blank">
 						<li>
 							<FontAwesomeIcon icon={faCodepen} />
 						</li>
