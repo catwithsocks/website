@@ -1,0 +1,31 @@
+@import './variables';
+@import './functions';
+@import './mixins';
+
+footer {
+	z-index: 100;
+	color: color(text);
+	bottom: 0;
+	display: inline-flex;
+	width: 100%;
+	position: fixed;
+	letter-spacing: 1px;
+
+	@include responsive_mobile() {
+		bottom: 35%;
+	}
+
+	.footer-distributed {
+		display: flex;
+		flex-direction: row;
+
+		align-items: center;
+		text-align: center;
+		width: 100%;
+		padding: 1rem;
+
+		.footer-center {
+			font-size: 0.6rem;
+		}
+	}
+}

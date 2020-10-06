@@ -1,0 +1,163 @@
+$colors: (
+	background: rgb(33, 33, 33),
+	background_overlay:
+		linear-gradient(
+			90deg,
+			rgba(19, 123, 167, 0.1) 0%,
+			rgba(34, 88, 120, 0.4) 35%,
+			rgba(19, 123, 167, 0.4) 100%
+		),
+	project-overlay:
+		linear-gradient(
+			90deg,
+			rgba(19, 123, 167, 0.7) 0%,
+			rgba(34, 88, 120, 0.7) 35%,
+			rgba(19, 123, 167, 0.9) 100%
+		),
+	projects_highlight:
+		linear-gradient(90deg, transparent, transparent, #27abdb, color(hover_h2)),
+	hover_text: rgba(49, 123, 167, 1),
+	hover_h2: rgba(49, 123, 167, 0.9959278711484594),
+	title_block: rgba(49, 123, 167, 0.85),
+	background_nav: rgba(27, 27, 27, 0.85),
+	background_nav_extra: rgba(18, 18, 18, 0.94),
+	overlay_bg: rgba(42, 42, 42, 0.6),
+	background_icons: hsla(25, 0%, 30%, 0.9),
+	text: hsl(25, 0%, 100%),
+	shadow_colour: rgb(42, 42, 42),
+);
+
+$show-home-image: true;
+$home-image: url(../images/background/landing_img.jpg);
+$project-image-1: url(../images/cards/media2.jpg);
+$background-opacity: 0.88;
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes transitionToRight {
+	0% {
+		transform: scaleX(0);
+		transform-origin: left;
+		opacity: 0;
+	}
+	100% {
+		transform: scaleX(1);
+		opacity: 1;
+	}
+}
+
+@keyframes coming {
+	from {
+		transform: translateX(-120px);
+	}
+	to {
+		transform: translateX(0px);
+	}
+}
+
+@keyframes comingOpposite {
+	from {
+		transform: translateX(120px);
+		opacity: 0;
+	}
+	to {
+		transform: translateX(0px);
+		opacity: 1;
+	}
+}
+
+@keyframes comingProjectDesc {
+	from {
+		transform: translateX(-500px);
+		opacity: 0;
+	}
+	to {
+		transform: translateX(0px);
+		opacity: 1;
+	}
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% -50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@keyframes animate {
+	0% {
+		background-position: -500%;
+	}
+	100% {
+		background-position: 500%;
+	}
+}
+
+@keyframes reveal {
+	80% {
+		letter-spacing: 4px;
+	}
+	100% {
+		background-size: 300% 300%;
+	}
+}
+
+@keyframes mainBlock {
+	0% {
+		width: 0%;
+		left: 0;
+	}
+	50% {
+		width: 100%;
+		left: 0;
+	}
+	100% {
+		width: 0;
+		left: 100%;
+	}
+}
+
+@keyframes secBlock {
+	0% {
+		width: 0%;
+		left: 0;
+	}
+	50% {
+		width: 100%;
+		left: 0;
+	}
+	100% {
+		width: 0;
+		left: 100%;
+	}
+}
+
+@keyframes mainFadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes secFadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0.7;
+	}
+}

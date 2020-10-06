@@ -1,0 +1,252 @@
+@import './variables';
+@import './functions';
+@import './mixins';
+
+#home {
+	box-sizing: border-box;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	height: 100vh;
+
+	.title {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		z-index: 100;
+		height: 100%;
+		width: 100%;
+		overflow: hidden;
+		box-sizing: border-box;
+		text-shadow: 1px 0 2px black;
+
+		.title-heading {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+			.title-container {
+				width: 100%;
+				height: auto;
+				position: relative;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				text-align: center;
+
+				.title-main {
+					width: 100%;
+					position: relative;
+					display: flex;
+					flex-direction: row;
+					align-items: center;
+					justify-content: center;
+					text-align: center;
+					height: 3rem;
+
+					.block {
+						width: 0%;
+						height: inherit;
+						background: color(title_block);
+						position: absolute;
+						animation: mainBlock 2s cubic-bezier(0.64, 0.04, 0, 0.95) forwards;
+						display: flex;
+					}
+					h1 {
+						text-transform: uppercase;
+						letter-spacing: 2px;
+						font-family: 'Roboto';
+						animation: reveal 2s ease-in-out forwards 200ms;
+						color: color(text);
+						font-size: 32px;
+						-webkit-animation: mainFadeIn 2s forwards;
+						-o-animation: mainFadeIn 2s forwards;
+						animation: mainFadeIn 2s forwards;
+						animation-delay: 1s;
+						opacity: 0;
+						display: flex;
+						align-items: baseline;
+						position: relative;
+					}
+				}
+				.role {
+					width: 100%;
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					justify-content: center;
+					text-align: center;
+
+					p {
+						animation: secFadeIn 2s forwards;
+						animation-delay: 2.1s;
+						opacity: 0;
+						font-weight: 600;
+						font-family: 'Roboto';
+						color: #ffffff;
+						font-size: 11px;
+						text-transform: uppercase;
+						letter-spacing: 5px;
+					}
+				}
+			}
+		}
+
+		h1,
+		h3 {
+			text-transform: uppercase;
+			display: flex;
+			position: relative;
+			align-items: center;
+			@include padding(0rem, 1rem, 0rem, 0rem);
+			animation: coming 1s;
+			animation-timing-function: cubic-bezier(0.15, 0.47, 0.42, 0.95);
+
+			&.lg-heading {
+				display: inline;
+				font-size: 3rem;
+			}
+
+			&.sm-heading {
+				font-size: 1.2rem;
+				margin: 1rem 0;
+				margin-bottom: 2rem;
+			}
+		}
+
+		.lg-heading {
+			@include responsive_mobile() {
+				@include padding(0, 1rem, 0, 0);
+			}
+		}
+
+		h3:after {
+			content: '';
+			position: relative;
+			width: 95%;
+			height: 1.5px;
+			background: color(hover_h2);
+			background: linear-gradient(
+				90deg,
+				transparent,
+				color(hover_text),
+				transparent
+			);
+			background-repeat: no-repeat;
+			background-size: 80%;
+			animation: transitionToRight 3s, animate 5s linear infinite;
+			bottom: 0;
+			@include responsive_mobile() {
+				width: 100%;
+				left: 0;
+			}
+		}
+
+		.icons {
+			color: color(text);
+			font-size: 32px;
+			-webkit-animation: mainFadeIn 2s forwards;
+			-o-animation: mainFadeIn 2s forwards;
+			animation: mainFadeIn 2s forwards;
+			animation-delay: 1.5s;
+			opacity: 0;
+			list-style-type: none;
+			font-size: 2.5rem;
+			display: flext;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+
+			a {
+				text-decoration: none;
+				color: color(text);
+				padding: 0.4rem;
+				@include easeOut;
+				transition: 0.3s;
+
+				&:hover,
+				&:active {
+					@include easeOut;
+					transition: 0.3s;
+					color: color(hover_h2);
+				}
+			}
+		}
+
+		p {
+			-webkit-animation: mainFadeIn 2s forwards;
+			-o-animation: mainFadeIn 2s forwards;
+			animation: mainFadeIn 2s forwards;
+			opacity: 0;
+			animation-delay: 2.8s;
+			@include padding(1rem, 0, 3rem, 0);
+		}
+
+		#title-text-last {
+			@include responsive_desktop() {
+				margin-bottom: 3rem;
+			}
+			@include responsive_desktop_large() {
+				margin-bottom: 5rem;
+			}
+			@include responsive_tablet() {
+				margin-bottom: 3rem;
+			}
+
+			@include responsive_mobile() {
+				margin-bottom: 3rem;
+			}
+		}
+	}
+	.overview-section-wrapper {
+		z-index: 100;
+		position: relative;
+		margin-top: 5rem;
+		@include responsive_mobile() {
+			margin-top: 3rem;
+		}
+
+		.overview-section {
+			width: auto;
+			ul {
+				list-style-type: none;
+				display: flex;
+				flex-direction: row;
+				justify-content: center;
+				align-items: center;
+
+				a {
+					margin: 0 2rem;
+					text-transform: uppercase;
+					letter-spacing: 2px;
+					@include responsive_mobile() {
+						margin: 0 1rem;
+					}
+				}
+			}
+
+			&.active {
+				left: 0;
+				transform: translate3d(0, 0, 0);
+				visibility: visible;
+				ul {
+					height: 50%;
+					overflow: hidden;
+					flex-direction: column;
+					list-style-type: none;
+					display: flex;
+					box-shadow: 3px 2px 18px 0px rgba(0, 0, 0, 0.75);
+				}
+			}
+		}
+	}
+}

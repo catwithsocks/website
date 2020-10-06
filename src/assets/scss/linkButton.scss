@@ -1,0 +1,55 @@
+@import './variables';
+@import './functions';
+@import './mixins';
+
+.link-button {
+	width: 100%;
+	top: 0;
+	padding-bottom: 2rem;
+	position: relative;
+	-webkit-animation: mainFadeIn 2s forwards;
+	-o-animation: mainFadeIn 2s forwards;
+	animation: mainFadeIn 2s forwards;
+	opacity: 0;
+	animation-delay: 2.8s;
+
+	.button {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		a {
+			text-decoration: none;
+			margin: 0;
+
+			button {
+				cursor: pointer;
+				background: color(projects_highlight);
+				background-size: 400% 400%;
+				animation: gradient 10s ease infinite;
+				border: 1px solid color(hover_text);
+				padding: 2rem 3rem;
+				box-shadow: 0 0 1px black;
+				outline: none;
+				transition: 0.4s ease-in;
+
+				h6 {
+					font-size: 14px;
+					color: color(text);
+					font-family: 'Raleway';
+					font-weight: 200;
+					align-content: center;
+					letter-spacing: 8px;
+					text-transform: uppercase;
+					text-shadow: 0 0 1px black;
+				}
+
+				&:hover,
+				&.active {
+					border: 1px solid color(text);
+					transition: 0.4s ease-in;
+				}
+			}
+		}
+	}
+}

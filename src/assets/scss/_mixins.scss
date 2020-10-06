@@ -1,0 +1,78 @@
+@import './variables';
+
+@mixin padding($top, $right, $bottom, $left) {
+	padding: $top $right $bottom $left;
+}
+
+@mixin margin($top, $right, $bottom, $left) {
+	margin: $top $right $bottom $left;
+}
+
+@mixin easeOut {
+	transition: all 0.5s ease-out;
+	transition-timing-function: cubic-bezier(0.11, 0.89, 0.47, 0.99);
+}
+
+@mixin background() {
+	@if $show-home-image {
+		&#bg-img {
+			z-index: 99;
+			background: $home-image;
+			background-attachment: fixed;
+			background-size: cover;
+			background-repeat: no-repeat;
+
+			&:after {
+				content: '';
+				position: fixed;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				z-index: 99;
+				background: rgba(color(background), $background-opacity);
+			}
+		}
+	}
+}
+
+@mixin content_page() {
+	z-index: 100;
+	padding: 3rem 2rem;
+}
+
+@mixin responsive_mobile {
+	@media only screen and (max-width: 767px) {
+		@content;
+	}
+}
+
+@mixin responsive_tablet {
+	@media only screen and (min-width: 768px) and (max-width: 1023px) {
+		@content;
+	}
+}
+
+@mixin responsive_desktop {
+	@media only screen and (min-width: 1024px) and (max-width: 1919px) {
+		@content;
+	}
+}
+
+@mixin responsive_ipadPro_portrait {
+	@media only screen and (min-width: 1024px) and (orientation: portrait) {
+		@content;
+	}
+}
+
+@mixin responsive_desktop_large {
+	@media only screen and (min-width: 1920px) {
+		@content;
+	}
+}
+
+@mixin responsive_2160p {
+	@media only screen and (min-width: 2160px) {
+		@content;
+	}
+}

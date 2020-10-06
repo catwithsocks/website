@@ -1,0 +1,19 @@
+{
+	"nav.projects": "Projects",
+	"language.title": "Language",
+	"title.title": "Goran",
+	"title.subTitle": "Aspiring Web Developer",
+	"title.next": "Projects",
+	"projects.title": "Projects",
+	"projects.projects.homepage": "My Homepage",
+	"projects.projects.homepage.desc": "Personal Homepage and Portfolio",
+	"projects.projects.project.desc": "My personal website, which contains infos about my projects and me. It was created in React using SCSS for the Design. The goal was to make it clean, modern-looking and easy to handle.",
+	"projects.showMore": "Show More",
+	"projects.showMore.open": "Show Less",
+	"projects.projects.project.link": "Project",
+	"projects.projects.project.source": "Source",
+	"about.title1": "Who I am",
+	"about.text1": "I'm an aspiring Web-developer who loves to learn and try out new things. I value clean and responsive web applications above all. If the handling isn't enjoyable, then it's not a good or worthwhile experience. If you want to learn more about me or my projects, feel free to look around and drop me a message if you want to work with me or just talk about Webdev.",
+	"about.title2": "Skills & Experience",
+	"about.text2": "I love to work with all kinds of technologies. As of now, my main focus has been Frontend-Development, where I try to learn as much as I can and implement code according to modern standards. I strive to continuously learn more and one day become a fully-fledged Full-Stack-Developer."
+}

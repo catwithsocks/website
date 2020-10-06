@@ -1,0 +1,58 @@
+@import './variables';
+@import './functions';
+@import './mixins';
+
+a {
+	text-decoration: none;
+	color: color(text);
+
+	.next-section {
+		text-align: center;
+		letter-spacing: 2px;
+		text-transform: uppercase;
+		/* padding: 2rem 0;
+		padding-bottom: 5rem; */
+		font-size: 1.2em;
+		opacity: 0.7;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		-webkit-animation: mainFadeIn 2s forwards;
+		-o-animation: mainFadeIn 2s forwards;
+		animation: mainFadeIn 2s forwards;
+		opacity: 0;
+		animation-delay: 2.8s;
+
+		h6 {
+			opacity: 0.7;
+		}
+
+		.MuiSvgIcon-root {
+			font-size: 4rem;
+			opacity: 0.7;
+		}
+
+		&:hover,
+		&:active,
+		&:focus {
+			opacity: 1;
+			@include easeOut;
+			h6 {
+				opacity: 1;
+				@include easeOut;
+			}
+
+			.MuiSvgIcon-root {
+				opacity: 1;
+			}
+		}
+	}
+}
+
+a,
+.next-section {
+	margin-top: 6rem;
+	@include responsive_mobile() {
+		margin-top: 0;
+	}
+}

@@ -1,0 +1,19 @@
+{
+	"nav.projects": "Projekte",
+	"language.title": "Sprache",
+	"title.title": "Goran",
+	"title.subTitle": "Angehender Web-Entwickler",
+	"title.next": "Projekte",
+	"projects.title": "Projekte",
+	"projects.projects.homepage": "Meine Homepage",
+	"projects.projects.homepage.desc": "Persönliche Homepage und Portfolio",
+	"projects.projects.project.desc": "Meine Personöliche Website, welche Infos zu mir und meinen Projekten enthält. Die Seite wurde in React entwickelt und SCSS als Designvariante verwendet. Das Ziel war, die Seite sauber und modern zu designen, bei dem ein möglichst einfaches Handling vorhanden ist.",
+	"projects.showMore": "Mehr Anzeigen",
+	"projects.showMore.open": "Weniger Anzeigen",
+	"projects.projects.project.link": "Projekt",
+	"projects.projects.project.source": "Quellcode",
+	"about.title1": "Wer bin ich",
+	"about.text1": "Ich bin ein angehender Web-Entwickler welcher ständig Neues lernen will. Klarheit im Design und Responsiveness der Seiten, stehen bei mir an höchster Stelle. Wenn es nicht angenehm für den User ist, dann ist es keine gute oder lohnenswerte Erfahrung. Falls du mehr über mich oder meine Projekte erfahren, oder einfach nur über Webentwicklung reden willst, Kontaktiere mich einfach.",
+	"about.title2": "Skills & Erfahrungen",
+	"about.text2": "Ich liebe es mit verschiedenen Technologien zu arbeiten. Im Moment liegt mein Fokus noch auf Frontend-Entwicklung, wo ich so viel wie möglich lernen will und Code anhand momentaner Standards implementiere. Mein Ziel ist es mich stetig weiterzuentwickeln um eines Tages ein vollumfänglicher Full-Stack Entwickler zu werden."
+}

@@ -1,0 +1,18 @@
+@import './variables';
+@import './functions';
+@import './mixins';
+
+.fade-in-section {
+  z-index: 100;
+  opacity: 0;
+  transform: translateY(15vh);
+  visibility: hidden;
+  transition: opacity 400ms ease-out, transform 400ms ease-out, visibility 1200ms ease-out;
+}
+
+.fade-in-section.is-visible {
+  z-index: 100;
+  opacity: 1;
+  transform: none;
+  visibility: visible;
+}

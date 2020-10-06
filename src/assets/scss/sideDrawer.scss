@@ -1,0 +1,258 @@
+@import './variables';
+@import './functions';
+@import './mixins';
+
+.sideDrawer {
+	height: 100%;
+	background: color(background_nav);
+	position: fixed;
+	top: 0;
+	transform: translate3d(100%, 0, 0);
+	width: 100vw;
+	max-width: 100%;
+	z-index: 200;
+	visibility: hidden;
+	text-transform: uppercase;
+	@include easeOut;
+
+	ul {
+		height: 50%;
+		width: 100%;
+		float: right;
+		overflow: hidden;
+		flex-direction: column;
+		padding-top: 8em;
+		list-style-type: none;
+		display: flex;
+		text-align: center;
+		background: color(background_nav_extra);
+
+		.sideDrawer-main {
+			.sideDrawer-nav {
+				display: flex;
+				flex-direction: row;
+				justify-content: center;
+				align-items: center;
+				border-bottom: 1px solid color(background_icons);
+				margin-bottom: 2rem;
+
+				a {
+					margin: 0 2rem;
+					transition: 0.2s;
+					color: color(text);
+					text-decoration: none;
+					&:hover,
+					&:active {
+						transition: 0.2s;
+						color: color(hover_h2);
+					}
+
+					li {
+						padding: 0;
+						margin: 0;
+					}
+				}
+			}
+			.language-select {
+				position: relative;
+				width: 100%;
+				z-index: 200;
+				.language-title {
+					padding: 0.3rem 0;
+					letter-spacing: 2px;
+				}
+
+				.language-buttons {
+					display: flex;
+					flex-direction: row;
+					justify-content: center;
+					align-items: center;
+					text-align: center;
+
+					.language-button {
+						margin: 0.5rem;
+						padding: 0.6rem;
+						outline: none;
+						color: color(text);
+						background: none;
+						border: 1px solid color(text);
+						border-radius: 2rem;
+						cursor: pointer;
+						transition: 0.2s;
+						justify-content: center;
+						align-items: center;
+						text-align: center;
+
+						&:hover,
+						&.active {
+							background: color(hover_h2);
+							border-color: color(hover_h2);
+							transition: 0.2s;
+						}
+					}
+				}
+			}
+
+			.logo_links {
+				margin-top: 4.5rem;
+				animation-name: fadeIn;
+				animation-duration: 2s;
+				text-align: center;
+				list-style-type: none;
+				font-size: 2.5rem;
+				@include responsive_mobile() {
+					display: block;
+					align-items: center;
+					text-align: center;
+				}
+
+				a {
+					text-decoration: none;
+					color: color(text);
+					padding: 0.4rem;
+					transition: 0.2s;
+					&:hover,
+					&:active {
+						color: color(hover_h2);
+						transition: 0.2s;
+					}
+				}
+			}
+		}
+	}
+}
+
+.active {
+	.sideDrawer {
+		right: 0;
+		width: 100vw;
+		transform: translate3d(0, 0, 0);
+		visibility: visible;
+	}
+}
+
+@include responsive_tablet() {
+	.sideDrawer {
+		ul {
+			height: 100%;
+			width: 50%;
+		}
+	}
+
+	.active {
+		.sideDrawer {
+			ul {
+				height: 100%;
+				overflow: hidden;
+				flex-direction: column;
+				padding-top: 8em;
+				list-style-type: none;
+				display: flex;
+			}
+		}
+	}
+}
+
+@include responsive_desktop() {
+	.sideDrawer {
+		ul {
+			height: 100%;
+			width: 40%;
+			a {
+				li {
+					padding: 1rem 0;
+					margin-bottom: 2rem;
+					position: relative;
+					box-sizing: border-box;
+					letter-spacing: 1px;
+					width: 100%;
+
+					&::after {
+						content: '';
+						width: 100%;
+						height: 2px;
+						background-color: color(hover);
+						position: absolute;
+						left: 0;
+						bottom: 0;
+						transform-origin: right;
+						transform: scaleX(0);
+					}
+
+					&:hover::after,
+					&:active::after {
+						background: color(hover);
+						transition: 0.8s;
+						transform: scaleX(1);
+					}
+				}
+
+				&:hover {
+					color: color(hover_text);
+				}
+			}
+		}
+	}
+
+	.active {
+		.sideDrawer {
+			ul {
+				height: 100%;
+				overflow: hidden;
+				flex-direction: column;
+				padding-top: 8em;
+				list-style-type: none;
+				display: flex;
+			}
+		}
+	}
+}
+
+@include responsive_desktop_large() {
+	.sideDrawer {
+		ul {
+			height: 100%;
+			width: 30%;
+
+			a {
+				li {
+					&::after {
+						content: '';
+						width: 100%;
+						height: 2px;
+						background-color: color(hover);
+						position: absolute;
+						left: 0;
+						bottom: 0;
+						transform-origin: right;
+						transform: scaleX(0);
+					}
+
+					&:hover::after,
+					&:active::after {
+						background: color(hover);
+						transition: 0.8s;
+						transform: scaleX(1);
+					}
+				}
+
+				&:hover {
+					color: color(hover_text);
+				}
+			}
+		}
+	}
+
+	.active {
+		.sideDrawer {
+			ul {
+				height: 100%;
+				overflow: hidden;
+				flex-direction: column;
+				padding-top: 8em;
+				list-style-type: none;
+				display: flex;
+			}
+		}
+	}
+}
