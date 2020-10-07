@@ -39,12 +39,6 @@ const SimpleCollapse = () => {
 					defaultMessage="Homepage"
 				/>
 			}
-			projDesc={
-				<FormattedMessage
-					id="projects.projects.project.desc"
-					defaultMessage="Description"
-				/>
-			}
 			linkToProj="/"
 			chipLink="https://github.com/cateatsbananas/personal-homepage"
 			projType={['REACTJS', 'SCSS', 'HTML5', 'Website']}
