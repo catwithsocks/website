@@ -40,6 +40,7 @@ const SimpleCollapse = () => {
 				/>
 			}
 			linkToProj="/"
+			
 			chipLink="https://github.com/cateatsbananas/personal-homepage"
 			projType={['REACTJS', 'SCSS', 'HTML5', 'Website']}
 		/>,

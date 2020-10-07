@@ -9,7 +9,6 @@ import {
 import LanguageSelect from '../LanguageSelect';
 import { Link } from 'react-router-dom';
 import { FormattedMessage } from 'react-intl';
-import NavFooter from '../NavFooter';
 
 library.add(faGithubSquare, faCodepen);
 
@@ -62,9 +61,6 @@ const SideDrawer = () => {
 							</a>
 						</div>
 					</div>
-					<footer>
-						<NavFooter />
-					</footer>
 				</ul>
 			</nav>
 		</div>
