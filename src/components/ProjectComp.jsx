@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { makeStyles, Modal, Backdrop, Fade } from '@material-ui/core';
+import { Modal, Backdrop, Fade } from '@material-ui/core';
+import { makeStyles } from '@material-ui/core/styles';
 import { FormattedMessage } from 'react-intl';
 
 const useStyles = makeStyles((theme) => ({

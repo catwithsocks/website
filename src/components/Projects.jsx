@@ -9,6 +9,8 @@ import ProjComp from './ProjectComp';
 import ProjCompExtra from './ProjectExtraComp';
 import my_homepage from '../assets/images/cards/my_homepage.png';
 import my_homepage_preview from '../assets/images/cards/my_homepage_preview.png';
+import startpage from '../assets/images/cards/startpage.png';
+import startpage_preview from '../assets/images/cards/startpage_preview.png';
 import { ToggleContext } from './ToggleStateContext';
 
 import { FormattedMessage } from 'react-intl';
@@ -48,8 +50,8 @@ const SimpleCollapse = () => {
 			projType={['REACTJS', 'SCSS', 'HTML5', 'Website']}
 		/>,
 		<ProjComp
-			src={my_homepage_preview}
-			src2={my_homepage}
+			src={startpage_preview}
+			src2={startpage}
 			projName={
 				<FormattedMessage
 					id="projects.projects.startpage"
@@ -64,13 +66,13 @@ const SimpleCollapse = () => {
 			}
 			linkToProj="/"
 			chipLink="https://codesandbox.io/s/eager-wildflower-8d2sj"
-			projType={['HTML5', 'CSS', 'JAVASCRIPT']}
+			projType={['JAVASCRIPT', 'CSS', 'HTML5']}
 		/>,
 		<ProjComp
 			src={my_homepage_preview}
 			src2={my_homepage}
-			projName="Project 3"
-			projText="Placeholder as example"
+			projName="Coming Soon"
+			projText="Coming Soon"
 			linkToProj="/"
 			chipLink="/"
 		/>,
@@ -80,67 +82,29 @@ const SimpleCollapse = () => {
 		<ProjCompExtra
 			src={my_homepage_preview}
 			src2={my_homepage}
-			projName="Project 6"
-			projText="Placeholder as example"
+			projName="Coming Soon"
+			projText="Coming Soon"
 			linkToProj="/"
 			chipLink="/"
-			projType={['Website', 'ReactJS', 'HTML5', 'SCSS']}
+			projType={['Coming Soon']}
 		/>,
 		<ProjCompExtra
 			src={my_homepage_preview}
 			src2={my_homepage}
-			projName="Project 7"
-			projText="Placeholder as example"
+			projName="Coming Soon"
+			projText="Coming Soon"
 			linkToProj="/"
 			chipLink="/"
+			projType={['Coming Soon']}
 		/>,
 		<ProjCompExtra
 			src={my_homepage_preview}
 			src2={my_homepage}
-			projName="Project 8"
-			projText="Placeholder fas example"
+			projName="Coming Soon"
+			projText="Coming Soon"
 			linkToProj="/"
 			chipLink="/"
-		/>,
-		<ProjCompExtra
-			src={my_homepage_preview}
-			src2={my_homepage}
-			projName="Project 10"
-			projText="Placeholder as example"
-			linkToProj="/"
-			chipLink="/"
-		/>,
-		<ProjCompExtra
-			src={my_homepage_preview}
-			src2={my_homepage}
-			projName="Project 10"
-			projText="Placeholder as example"
-			linkToProj="/"
-			chipLink="/"
-		/>,
-		<ProjCompExtra
-			src={my_homepage_preview}
-			src2={my_homepage}
-			projName="Project 10"
-			projText="Placeholder as example"
-			linkToProj="/"
-			chipLink="/"
-		/>,
-		<ProjCompExtra
-			src={my_homepage_preview}
-			src2={my_homepage}
-			projName="Project 10"
-			projText="Placeholder as example"
-			linkToProj="/"
-			chipLink="/"
-		/>,
-		<ProjCompExtra
-			src={my_homepage_preview}
-			src2={my_homepage}
-			projName="Project 10"
-			projText="Placeholder as example"
-			linkToProj="/"
-			chipLink="/"
+			projType={['Coming Soon']}
 		/>,
 	];
 
