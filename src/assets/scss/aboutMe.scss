@@ -179,13 +179,55 @@
 				}
 
 				.overview-tech {
-					max-width: 100%;
-					/* flex-wrap: wrap; */
+					display: flex;
 					flex-direction: row;
+					flex-wrap: wrap;
+					max-width: 100%;
 					text-align: center;
 					justify-content: center;
 
-					.row {
+					.tech-btn {
+						font-family: "Roboto";
+						background: rgba(84, 84, 84, .95);
+						position: relative;
+						margin: 2rem;
+						padding: .5rem 0;
+						width: 15rem;
+
+						span {
+							display: flex;
+							flex-direction: row;
+							justify-content: flex-end;
+							position: absolute;
+							height: 100%;
+							width: 100%;
+							top: 0;
+							left: 0;
+							opacity: 0;
+							transition: all 1s cubic-bezier(0.54, 0.41, 0.43, 1.01);
+							transition-timing-function: cubic-bezier(0.35, 0.01, 0, 1);
+
+							img {
+								display: flex;
+								justify-content: center;
+								padding: .2rem;
+								width: 3rem;
+							}
+						}
+
+					}
+					
+					div:hover, 
+					div.active {
+						span {
+							opacity: 1;
+							transition: all 1s cubic-bezier(0.54, 0.41, 0.43, 1.01);
+						}
+					}
+					
+	
+
+					/* .row {
 						display: flex;
 
 						flex-direction: row;
@@ -207,7 +249,7 @@
 								height: 4rem;
 							}
 						}
-					}
+					} */
 				}
 			}
 		}

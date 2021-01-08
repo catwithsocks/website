@@ -3,7 +3,7 @@ import { Modal, Backdrop, Fade } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import { FormattedMessage } from 'react-intl';
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(() => ({
 	modal: {
 		display: 'flex',
 		alignItems: 'center',
@@ -11,9 +11,8 @@ const useStyles = makeStyles((theme) => ({
 	},
 	paper: {
 		backgroundColor: 'rgb(42,42,42)',
-		/* border: '2px solid #000', */
-		boxShadow: theme.shadows[5],
-		padding: theme.spacing(2, 4, 3),
+		/* boxShadow: shadows[5],
+		padding: spacing(2, 4, 3), */
 	},
 }));
 
@@ -55,7 +54,7 @@ function ProjComp({
 						<div className="link-source-wrapper">
 							<button
 								className="link-source"
-								onClick={() => setModalIsOpen(!modalIsOpen)}
+								onClick={() => setModalIsOpen(true)}
 							>
 								<FormattedMessage
 									id="projects.projects.project.link"

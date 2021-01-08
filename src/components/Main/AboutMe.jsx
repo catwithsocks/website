@@ -2,7 +2,6 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { FormattedMessage } from 'react-intl';
 
-import aboutMePic from '../../assets/images/etc/about-me-test.jpg';
 import javascript from '../../assets/images/logos/javascript.svg';
 import css3 from '../../assets/images/logos/css3.svg';
 import html5 from '../../assets/images/logos/html5.svg';
@@ -36,9 +35,6 @@ const AboutMe = () => {
 				</div>
 				<div className="content_about">
 					<section className="about-1">
-						{/* <div className="about-picture">
-							<img src={aboutMePic} alt="About-Me" />
-						</div> */}
 						<div className="about-description">
 							<h4>
 								<FormattedMessage id="about.title1" defaultMessage="About Me" />
@@ -50,27 +46,29 @@ const AboutMe = () => {
 					</section>
 					<section className="about-2">
 						<div className="overview-tech">
-							<div className="row">
-								<div className="icon-tech">
-									<img src={html5} alt="HTML5 Logo" />
-								</div>
-								<div className="icon-tech">
-									<img src={css3} alt="CSS3 Logo" />
-								</div>
-								<div className="icon-tech">
-									<img src={javascript} alt="Javascript Logo" />
-								</div>
-								<div className="icon-tech">
-									<img src={sass} alt="SASS Logo" />
-								</div>
+							<div id="HTML5" className="tech-btn">
+								HTML5
+								<span><img src={html5} alt="HTML5 Logo" /></span>
 							</div>
-							<div className="row">
-								<div className="icon-tech">
-									<img src={typescript} alt="Typescript Logo" />
-								</div>
-								<div className="icon-tech">
-									<img src={react} alt="React Logo" />
-								</div>
+							<div id="CSS" className="tech-btn">
+								CSS3
+								<span><img src={css3} alt="CSS3 Logo" /></span>
+							</div>
+							<div id="JS" className="tech-btn">
+								Javascript
+								<span><img src={javascript} alt="JS Logo" /></span>
+							</div>
+							<div id="SASS" className="tech-btn">
+								SASS
+								<span><img src={sass} alt="SASS Logo" /></span>
+							</div>
+							<div id="TS" className="tech-btn">
+								Typescript
+								<span><img src={typescript} alt="TS Logo" /></span>
+							</div>
+							<div id="REACT" className="tech-btn">
+								React
+								<span><img src={react} alt="React Logo" /></span>
 							</div>
 						</div>
 						<div className="about-description">

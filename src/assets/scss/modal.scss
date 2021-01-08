@@ -3,18 +3,20 @@
 @import './mixins';
 
 .makeStyles-modal-104,
-.makeStyles-modal-112 {
+.makeStyles-modal-112,
+.makeStyles-modal-1 {
 	position: relative;
 
 	.makeStyles-paper-105,
-	.makeStyles-paper-113 {
+	.makeStyles-paper-113,
+	.makeStyles-paper-2 {
+		display: flex;
+		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 		text-align: center;
 		outline: none;
 		border: none;
-		display: flex;
-		flex-direction: column;
 
 		h3 {
 			padding: 2rem 0;
