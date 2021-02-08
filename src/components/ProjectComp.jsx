@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Modal, Backdrop, Fade } from '@material-ui/core';
+import { Dialog, Backdrop, Fade } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import { FormattedMessage } from 'react-intl';
 
@@ -62,7 +62,7 @@ function ProjComp({
 								/>
 							</button>
 
-							<Modal
+							<Dialog
 								aria-labelledby="transition-modal-title"
 								aria-describedby="transition-modal-description"
 								className={classes.modal}
@@ -92,7 +92,7 @@ function ProjComp({
 										<p>{projDesc}</p>
 									</div>
 								</Fade>
-							</Modal>
+							</Dialog>
 							<a href={chipLink} target="_blank" rel="noopener noreferrer">
 								<button className="link-source">
 									<FormattedMessage

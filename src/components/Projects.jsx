@@ -77,7 +77,12 @@ const SimpleCollapse = () => {
 		<ProjCompExtra
 			src={my_homepage_preview}
 			src2={my_homepage}
-			projName="Coming Soon"
+			projName={
+				<FormattedMessage
+					id="projects.projects.startpage"
+					defaultMessage="Personal Startpage"
+				/>
+			}
 			projText="Coming Soon"
 			linkToProj="/"
 			chipLink="/"

@@ -5,11 +5,12 @@
 .makeStyles-modal-104,
 .makeStyles-modal-112,
 .makeStyles-modal-1 {
-	position: relative;
+	/* position: relative; */
 
 	.makeStyles-paper-105,
-	.makeStyles-paper-113,
-	.makeStyles-paper-2 {
+	.makeStyles-paper-2,
+	.makeStyles-paper-4 {
+		color: white;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { makeStyles, Modal, Backdrop, Fade } from '@material-ui/core';
+import { makeStyles, Dialog, Backdrop, Fade } from '@material-ui/core';
 import { FormattedMessage } from 'react-intl';
 
 const useStyles = makeStyles((theme) => ({
@@ -58,7 +58,7 @@ function ProjCompExtra({
 								/>
 							</button>
 
-							<Modal
+							<Dialog
 								aria-labelledby="transition-modal-title"
 								aria-describedby="transition-modal-description"
 								className={classes.modal}
@@ -82,7 +82,7 @@ function ProjCompExtra({
 										<p>{projDesc}</p>
 									</div>
 								</Fade>
-							</Modal>
+							</Dialog>
 							<a href={chipLink} target="_blank" rel="noopener noreferrer">
 								<button className="link-extra-source">
 									<FormattedMessage
